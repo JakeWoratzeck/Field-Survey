@@ -11,6 +11,14 @@
 		9B18576C1FA4FE3B00E9AFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B18576A1FA4FE3B00E9AFDE /* Main.storyboard */; };
 		9B18576E1FA4FE3B00E9AFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B18576D1FA4FE3B00E9AFDE /* Assets.xcassets */; };
 		9B1857711FA4FE3B00E9AFDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B18576F1FA4FE3B00E9AFDE /* LaunchScreen.storyboard */; };
+		9B18577C1FA504B200E9AFDE /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B18577B1FA504B200E9AFDE /* field_observations.json */; };
+		9B18577E1FA5060000E9AFDE /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18577D1FA5060000E9AFDE /* Classification.swift */; };
+		9B1857801FA508F700E9AFDE /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18577F1FA508F700E9AFDE /* FieldSurvey.swift */; };
+		9B1857821FA50F5E00E9AFDE /* FieldSurveyJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1857811FA50F5E00E9AFDE /* FieldSurveyJSONParser.swift */; };
+		9B1857841FA5169B00E9AFDE /* FieldSurveysJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1857831FA5169B00E9AFDE /* FieldSurveysJSONLoader.swift */; };
+		9B1857861FA51B4600E9AFDE /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1857851FA51B4600E9AFDE /* ObservationsViewController.swift */; };
+		9B1857881FA51C3500E9AFDE /* ObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1857871FA51C3500E9AFDE /* ObservationDetailViewController.swift */; };
+		9B18578A1FA523E100E9AFDE /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1857891FA523E100E9AFDE /* ObservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		9B18576D1FA4FE3B00E9AFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B1857701FA4FE3B00E9AFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1857721FA4FE3B00E9AFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B18577B1FA504B200E9AFDE /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		9B18577D1FA5060000E9AFDE /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		9B18577F1FA508F700E9AFDE /* FieldSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
+		9B1857811FA50F5E00E9AFDE /* FieldSurveyJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONParser.swift; sourceTree = "<group>"; };
+		9B1857831FA5169B00E9AFDE /* FieldSurveysJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveysJSONLoader.swift; sourceTree = "<group>"; };
+		9B1857851FA51B4600E9AFDE /* ObservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = "<group>"; };
+		9B1857871FA51C3500E9AFDE /* ObservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationDetailViewController.swift; sourceTree = "<group>"; };
+		9B1857891FA523E100E9AFDE /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +68,29 @@
 		9B1857651FA4FE3B00E9AFDE /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				9B1857781FA502C000E9AFDE /* Model */,
 				9B1857661FA4FE3B00E9AFDE /* AppDelegate.swift */,
 				9B18576A1FA4FE3B00E9AFDE /* Main.storyboard */,
 				9B18576D1FA4FE3B00E9AFDE /* Assets.xcassets */,
 				9B18576F1FA4FE3B00E9AFDE /* LaunchScreen.storyboard */,
 				9B1857721FA4FE3B00E9AFDE /* Info.plist */,
+				9B1857851FA51B4600E9AFDE /* ObservationsViewController.swift */,
+				9B1857871FA51C3500E9AFDE /* ObservationDetailViewController.swift */,
+				9B1857891FA523E100E9AFDE /* ObservationTableViewCell.swift */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		9B1857781FA502C000E9AFDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B18577B1FA504B200E9AFDE /* field_observations.json */,
+				9B18577D1FA5060000E9AFDE /* Classification.swift */,
+				9B18577F1FA508F700E9AFDE /* FieldSurvey.swift */,
+				9B1857811FA50F5E00E9AFDE /* FieldSurveyJSONParser.swift */,
+				9B1857831FA5169B00E9AFDE /* FieldSurveysJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1857711FA4FE3B00E9AFDE /* LaunchScreen.storyboard in Resources */,
+				9B18577C1FA504B200E9AFDE /* field_observations.json in Resources */,
 				9B18576E1FA4FE3B00E9AFDE /* Assets.xcassets in Resources */,
 				9B18576C1FA4FE3B00E9AFDE /* Main.storyboard in Resources */,
 			);
@@ -133,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B18578A1FA523E100E9AFDE /* ObservationTableViewCell.swift in Sources */,
+				9B1857881FA51C3500E9AFDE /* ObservationDetailViewController.swift in Sources */,
 				9B1857671FA4FE3B00E9AFDE /* AppDelegate.swift in Sources */,
+				9B18577E1FA5060000E9AFDE /* Classification.swift in Sources */,
+				9B1857841FA5169B00E9AFDE /* FieldSurveysJSONLoader.swift in Sources */,
+				9B1857801FA508F700E9AFDE /* FieldSurvey.swift in Sources */,
+				9B1857861FA51B4600E9AFDE /* ObservationsViewController.swift in Sources */,
+				9B1857821FA50F5E00E9AFDE /* FieldSurveyJSONParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
